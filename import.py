@@ -8,7 +8,7 @@ session = cluster.connect()
 
 session.execute(
         """
-        CREATE KEYSPACE IF NOT EXISTS customer_data WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 2 };
+        CREATE KEYSPACE IF NOT EXISTS customer_data WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1 };
         """
 )
 
